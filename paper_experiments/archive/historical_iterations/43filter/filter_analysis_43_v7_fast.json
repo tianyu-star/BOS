@@ -1,0 +1,112 @@
+{
+  "config": {
+    "tau": 0.295,
+    "tau_used": 0.295,
+    "auto_tau": false,
+    "neg_quantile": 0.9,
+    "backup_ratio": 0.7,
+    "backup_margin": 4,
+    "base_rho3": 8,
+    "ref_memory_kb": 10,
+    "memory_list": [
+      10
+    ],
+    "occupancy_memory_kb": 10,
+    "min_hits": 2,
+    "label_field": "label",
+    "max_records": 200000
+  },
+  "score_diagnostics": {
+    "trending_score_stats": {
+      "count": 199533,
+      "min": 0.289050497374996,
+      "q10": 0.289050497374996,
+      "q25": 0.289050497374996,
+      "median": 0.289050497374996,
+      "q75": 0.289050497374996,
+      "q90": 0.28923946258183475,
+      "max": 0.9308615796566533,
+      "mean": 0.28910554823176016
+    },
+    "nontrending_score_stats": {
+      "count": 467,
+      "min": 0.289050497374996,
+      "q10": 0.289050497374996,
+      "q25": 0.28923946258183475,
+      "median": 0.28942850103240064,
+      "q75": 0.29101245369790635,
+      "q90": 0.2974337481228657,
+      "max": 0.8278289135185798,
+      "mean": 0.2960747434284747
+    }
+  },
+  "filter_fpr_vs_memory": [
+    {
+      "memory_kb": 10,
+      "rho3_used": 8,
+      "min_hits_used": 2,
+      "backup_margin_used": 4,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 124,
+        "num_admitted_trending": 56,
+        "num_admitted_nontrending": 68,
+        "false_positive_rate": 0.19883040935672514,
+        "true_positive_rate": 0.0002862136994142841,
+        "admission_purity": 0.45161290322580644
+      },
+      "learned_primary": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 49,
+        "num_admitted_trending": 33,
+        "num_admitted_nontrending": 16,
+        "false_positive_rate": 0.04678362573099415,
+        "true_positive_rate": 0.00016866164429770312,
+        "admission_purity": 0.673469387755102
+      },
+      "learned_full": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 120,
+        "num_admitted_trending": 57,
+        "num_admitted_nontrending": 63,
+        "false_positive_rate": 0.18421052631578946,
+        "true_positive_rate": 0.00029132465833239633,
+        "admission_purity": 0.475
+      },
+      "relative_fpr_reduction_factor_primary": 4.25,
+      "relative_fpr_reduction_factor_full": 1.0793650793650793
+    }
+  ],
+  "detector_occupancy": {
+    "memory_kb": 10,
+    "rho3_used": 8,
+    "backup_margin_used": 4,
+    "standard_filter_detector": {
+      "num_occupied_cells": 343,
+      "num_trending_cells": 266,
+      "num_nontrending_cells": 77,
+      "trending_fraction": 0.7755102040816326,
+      "nontrending_fraction": 0.22448979591836735
+    },
+    "learned_primary_detector": {
+      "num_occupied_cells": 112,
+      "num_trending_cells": 71,
+      "num_nontrending_cells": 41,
+      "trending_fraction": 0.6339285714285714,
+      "nontrending_fraction": 0.36607142857142855
+    },
+    "learned_full_detector": {
+      "num_occupied_cells": 260,
+      "num_trending_cells": 187,
+      "num_nontrending_cells": 73,
+      "trending_fraction": 0.7192307692307692,
+      "nontrending_fraction": 0.28076923076923077
+    }
+  }
+}

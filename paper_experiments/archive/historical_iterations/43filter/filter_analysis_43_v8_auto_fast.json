@@ -1,0 +1,115 @@
+{
+  "config": {
+    "tau": 0.3,
+    "tau_used": 0.08758654821763036,
+    "auto_tau": true,
+    "neg_quantile": 0.9,
+    "backup_ratio": 0.7,
+    "backup_margin": 4,
+    "base_rho3": 8,
+    "ref_memory_kb": 10,
+    "memory_list": [
+      10
+    ],
+    "occupancy_memory_kb": 10,
+    "min_hits": 2,
+    "label_field": "label",
+    "max_records": 200000,
+    "score_direction": "low_is_trending",
+    "pos_mean_score": 0.1953968090953467,
+    "neg_mean_score": 0.2573864145298358
+  },
+  "score_diagnostics": {
+    "trending_score_stats": {
+      "count": 197310,
+      "min": 0.01728897215881121,
+      "q10": 0.09678806901796991,
+      "q25": 0.09697301908135723,
+      "median": 0.09801075333807235,
+      "q75": 0.0983266423188881,
+      "q90": 0.6536945082894063,
+      "max": 0.9297269074784865,
+      "mean": 0.1953968090953467
+    },
+    "nontrending_score_stats": {
+      "count": 2690,
+      "min": 0.030621936875074467,
+      "q10": 0.08758654821763036,
+      "q25": 0.13787191735991441,
+      "median": 0.16651303922785737,
+      "q75": 0.3706977026849599,
+      "q90": 0.5346507874120326,
+      "max": 0.9299958919065746,
+      "mean": 0.2573864145298358
+    }
+  },
+  "filter_fpr_vs_memory": [
+    {
+      "memory_kb": 10,
+      "rho3_used": 8,
+      "min_hits_used": 2,
+      "backup_margin_used": 4,
+      "standard_filter": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 263,
+        "num_admitted_trending": 181,
+        "num_admitted_nontrending": 82,
+        "false_positive_rate": 0.3048327137546468,
+        "true_positive_rate": 0.009173381987735036,
+        "admission_purity": 0.688212927756654
+      },
+      "learned_primary": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 1864,
+        "num_admitted_trending": 1792,
+        "num_admitted_nontrending": 72,
+        "false_positive_rate": 0.26765799256505574,
+        "true_positive_rate": 0.09082154984542092,
+        "admission_purity": 0.9613733905579399
+      },
+      "learned_full": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 1957,
+        "num_admitted_trending": 1819,
+        "num_admitted_nontrending": 138,
+        "false_positive_rate": 0.5130111524163569,
+        "true_positive_rate": 0.0921899548933151,
+        "admission_purity": 0.9294839039345938
+      },
+      "relative_fpr_reduction_factor_primary": 1.1388888888888888,
+      "relative_fpr_reduction_factor_full": 0.5942028985507246
+    }
+  ],
+  "detector_occupancy": {
+    "memory_kb": 10,
+    "rho3_used": 8,
+    "backup_margin_used": 4,
+    "standard_filter_detector": {
+      "num_occupied_cells": 267,
+      "num_trending_cells": 189,
+      "num_nontrending_cells": 78,
+      "trending_fraction": 0.7078651685393258,
+      "nontrending_fraction": 0.29213483146067415
+    },
+    "learned_primary_detector": {
+      "num_occupied_cells": 163,
+      "num_trending_cells": 154,
+      "num_nontrending_cells": 9,
+      "trending_fraction": 0.9447852760736196,
+      "nontrending_fraction": 0.05521472392638037
+    },
+    "learned_full_detector": {
+      "num_occupied_cells": 236,
+      "num_trending_cells": 197,
+      "num_nontrending_cells": 39,
+      "trending_fraction": 0.8347457627118644,
+      "nontrending_fraction": 0.1652542372881356
+    }
+  }
+}

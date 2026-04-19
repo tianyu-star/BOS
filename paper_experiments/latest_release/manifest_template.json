@@ -1,0 +1,104 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "mawi_2024_local",
+      "display_name": "MAWI 2024-10-23",
+      "source": "MAWI",
+      "raw_files": [
+        "../202410231400.pcap"
+      ],
+      "output_dir": "../dataset/mawi_2024_local",
+      "flow_key": "5tuple",
+      "window_seconds": 0.1,
+      "max_duration_seconds": 3.0,
+      "max_packets": 300000,
+      "min_flow_packets": 9,
+      "train_ratio": 0.8,
+      "seed": 7,
+      "G": 1.2,
+      "D": 0.8,
+      "rho2": 3,
+      "full_config_override": {
+        "backup_ratio": 0.8,
+        "backup_margin": 4,
+        "backup_min_hits": 2
+      },
+      "log_every": 50000
+    },
+    {
+      "dataset_id": "mawi_2025_local",
+      "display_name": "MAWI 2025-11-26",
+      "source": "MAWI",
+      "raw_files": [
+        "../202511261400.pcap"
+      ],
+      "output_dir": "../dataset/mawi_2025_local",
+      "flow_key": "5tuple",
+      "window_seconds": 0.1,
+      "max_duration_seconds": 3.0,
+      "max_packets": 300000,
+      "min_flow_packets": 9,
+      "train_ratio": 0.8,
+      "seed": 7,
+      "G": 1.2,
+      "D": 0.8,
+      "rho2": 3,
+      "full_config_override": {
+        "backup_ratio": 0.9,
+        "backup_margin": 4,
+        "backup_min_hits": 2
+      },
+      "log_every": 50000
+    },
+    {
+      "dataset_id": "mawi_2026_local",
+      "display_name": "MAWI 2026-03-06",
+      "source": "MAWI",
+      "raw_files": [
+        "../rawData/202603061400.pcap.gz"
+      ],
+      "output_dir": "../dataset/mawi_2026_local",
+      "flow_key": "5tuple",
+      "window_seconds": 0.1,
+      "max_duration_seconds": 3.0,
+      "max_packets": 300000,
+      "min_flow_packets": 9,
+      "train_ratio": 0.8,
+      "seed": 7,
+      "G": 1.2,
+      "D": 0.8,
+      "rho2": 3,
+      "full_config_override": {
+        "backup_ratio": 0.95,
+        "backup_margin": 8,
+        "backup_min_hits": 3
+      },
+      "log_every": 50000
+    },
+    {
+      "dataset_id": "caida_local",
+      "display_name": "CAIDA Local",
+      "source": "CAIDA",
+      "raw_files": [
+        "../caida_1000w.pcap"
+      ],
+      "output_dir": "../dataset/caida_local",
+      "flow_key": "5tuple",
+      "window_seconds": 0.1,
+      "max_duration_seconds": 12.0,
+      "max_packets": 500000,
+      "min_flow_packets": 3,
+      "train_ratio": 0.8,
+      "seed": 7,
+      "G": 1.2,
+      "D": 0.8,
+      "rho2": 3,
+      "full_config_override": {
+        "backup_ratio": 0.95,
+        "backup_margin": 8,
+        "backup_min_hits": 3
+      },
+      "log_every": 50000
+    }
+  ]
+}

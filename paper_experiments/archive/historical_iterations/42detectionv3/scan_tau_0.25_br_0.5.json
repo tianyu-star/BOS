@@ -1,0 +1,70 @@
+[
+  {
+    "memory_kb": 10,
+    "scout_manual": {
+      "precision": 0.891156462585034,
+      "recall": 0.0006695356182727004,
+      "f1": 0.0013380659329434899,
+      "tp": 131,
+      "fp": 16,
+      "fn": 195527,
+      "num_gt_items": 195658,
+      "num_pred_items": 147,
+      "num_admitted_items": 801,
+      "num_admitted_by_score": 0,
+      "num_admitted_by_backup": 0
+    },
+    "scout_relaxed": {
+      "precision": 0.8924418604651163,
+      "recall": 0.0015690643878604504,
+      "f1": 0.003132621095703105,
+      "tp": 307,
+      "fp": 37,
+      "fn": 195351,
+      "num_gt_items": 195658,
+      "num_pred_items": 344,
+      "num_admitted_items": 2185,
+      "num_admitted_by_score": 0,
+      "num_admitted_by_backup": 0
+    },
+    "neutrend_filter": {
+      "precision": 0.8759894459102903,
+      "recall": 0.0016968383608132558,
+      "f1": 0.0033871156975468918,
+      "tp": 332,
+      "fp": 47,
+      "fn": 195326,
+      "num_gt_items": 195658,
+      "num_pred_items": 379,
+      "num_admitted_items": 2185,
+      "num_admitted_by_score": 2185,
+      "num_admitted_by_backup": 0
+    },
+    "neutrend_adaptive": {
+      "precision": 0.9168241965973535,
+      "recall": 0.002478815075284425,
+      "f1": 0.0049442623619302,
+      "tp": 485,
+      "fp": 44,
+      "fn": 195173,
+      "num_gt_items": 195658,
+      "num_pred_items": 529,
+      "num_admitted_items": 3379,
+      "num_admitted_by_score": 0,
+      "num_admitted_by_backup": 0
+    },
+    "neutrend_full": {
+      "precision": 0.8979057591623036,
+      "recall": 0.0017530589089124902,
+      "f1": 0.0034992858600285657,
+      "tp": 343,
+      "fp": 39,
+      "fn": 195315,
+      "num_gt_items": 195658,
+      "num_pred_items": 382,
+      "num_admitted_items": 7209,
+      "num_admitted_by_score": 3379,
+      "num_admitted_by_backup": 4734
+    }
+  }
+]

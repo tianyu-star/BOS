@@ -1,0 +1,201 @@
+{
+  "config": {
+    "tau": 0.3,
+    "backup_ratio": 0.85,
+    "base_rho3": 8,
+    "ref_memory_kb": 10,
+    "memory_list": [
+      2,
+      5,
+      10,
+      15,
+      20,
+      25
+    ],
+    "occupancy_memory_kb": 10,
+    "label_field": "label",
+    "max_records": null
+  },
+  "filter_fpr_vs_memory": [
+    {
+      "memory_kb": 2,
+      "rho3_used": 2,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 8504,
+        "num_admitted_trending": 8290,
+        "num_admitted_nontrending": 214,
+        "false_positive_rate": 0.6257309941520468,
+        "true_positive_rate": 0.04236984943115027,
+        "admission_purity": 0.9748353715898401
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 8504,
+        "num_admitted_trending": 8290,
+        "num_admitted_nontrending": 214,
+        "false_positive_rate": 0.6257309941520468,
+        "true_positive_rate": 0.04236984943115027,
+        "admission_purity": 0.9748353715898401
+      },
+      "relative_fpr_reduction_factor": 1.0
+    },
+    {
+      "memory_kb": 5,
+      "rho3_used": 4,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 4270,
+        "num_admitted_trending": 4140,
+        "num_admitted_nontrending": 130,
+        "false_positive_rate": 0.38011695906432746,
+        "true_positive_rate": 0.021159369920984574,
+        "admission_purity": 0.9695550351288056
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 4270,
+        "num_admitted_trending": 4140,
+        "num_admitted_nontrending": 130,
+        "false_positive_rate": 0.38011695906432746,
+        "true_positive_rate": 0.021159369920984574,
+        "admission_purity": 0.9695550351288056
+      },
+      "relative_fpr_reduction_factor": 1.0
+    },
+    {
+      "memory_kb": 10,
+      "rho3_used": 8,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 2185,
+        "num_admitted_trending": 2097,
+        "num_admitted_nontrending": 88,
+        "false_positive_rate": 0.2573099415204678,
+        "true_positive_rate": 0.010717680851281317,
+        "admission_purity": 0.9597254004576659
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 2185,
+        "num_admitted_trending": 2097,
+        "num_admitted_nontrending": 88,
+        "false_positive_rate": 0.2573099415204678,
+        "true_positive_rate": 0.010717680851281317,
+        "admission_purity": 0.9597254004576659
+      },
+      "relative_fpr_reduction_factor": 1.0
+    },
+    {
+      "memory_kb": 15,
+      "rho3_used": 12,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 1290,
+        "num_admitted_trending": 1209,
+        "num_admitted_nontrending": 81,
+        "false_positive_rate": 0.23684210526315788,
+        "true_positive_rate": 0.006179149331997669,
+        "admission_purity": 0.9372093023255814
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 1290,
+        "num_admitted_trending": 1209,
+        "num_admitted_nontrending": 81,
+        "false_positive_rate": 0.23684210526315788,
+        "true_positive_rate": 0.006179149331997669,
+        "admission_purity": 0.9372093023255814
+      },
+      "relative_fpr_reduction_factor": 1.0
+    },
+    {
+      "memory_kb": 20,
+      "rho3_used": 16,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 801,
+        "num_admitted_trending": 723,
+        "num_admitted_nontrending": 78,
+        "false_positive_rate": 0.22807017543859648,
+        "true_positive_rate": 0.0036952232977951324,
+        "admission_purity": 0.9026217228464419
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 801,
+        "num_admitted_trending": 723,
+        "num_admitted_nontrending": 78,
+        "false_positive_rate": 0.22807017543859648,
+        "true_positive_rate": 0.0036952232977951324,
+        "admission_purity": 0.9026217228464419
+      },
+      "relative_fpr_reduction_factor": 1.0
+    },
+    {
+      "memory_kb": 25,
+      "rho3_used": 20,
+      "standard_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 564,
+        "num_admitted_trending": 499,
+        "num_admitted_nontrending": 65,
+        "false_positive_rate": 0.19005847953216373,
+        "true_positive_rate": 0.002550368500137996,
+        "admission_purity": 0.8847517730496454
+      },
+      "learned_filter": {
+        "num_items_total": 196000,
+        "num_trending_items": 195658,
+        "num_nontrending_items": 342,
+        "num_admitted_items": 564,
+        "num_admitted_trending": 499,
+        "num_admitted_nontrending": 65,
+        "false_positive_rate": 0.19005847953216373,
+        "true_positive_rate": 0.002550368500137996,
+        "admission_purity": 0.8847517730496454
+      },
+      "relative_fpr_reduction_factor": 1.0
+    }
+  ],
+  "detector_occupancy": {
+    "memory_kb": 10,
+    "rho3_used": 8,
+    "standard_filter_detector": {
+      "num_occupied_cells": 393,
+      "num_trending_cells": 332,
+      "num_nontrending_cells": 61,
+      "trending_fraction": 0.8447837150127226,
+      "nontrending_fraction": 0.15521628498727735
+    },
+    "learned_filter_detector": {
+      "num_occupied_cells": 393,
+      "num_trending_cells": 332,
+      "num_nontrending_cells": 61,
+      "trending_fraction": 0.8447837150127226,
+      "nontrending_fraction": 0.15521628498727735
+    }
+  }
+}

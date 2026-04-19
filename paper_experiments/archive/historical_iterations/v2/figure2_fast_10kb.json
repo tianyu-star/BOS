@@ -1,0 +1,55 @@
+{
+  "mode": "fast_debug",
+  "settings": {
+    "memory_kb": 10,
+    "tau": 0.35,
+    "max_windows": null,
+    "max_records": null
+  },
+  "results": [
+    {
+      "memory_kb": 10,
+      "scout_relaxed": {
+        "precision": 0.8837209302325582,
+        "recall": 0.0015537315111061136,
+        "f1": 0.003102009163171804,
+        "tp": 304,
+        "fp": 40,
+        "fn": 195354,
+        "num_pred_items": 344,
+        "num_admitted_items": 2185
+      },
+      "neutrend_filter": {
+        "precision": 0.8490566037735849,
+        "recall": 0.00022999315131504974,
+        "f1": 0.00045986173490503856,
+        "tp": 45,
+        "fp": 8,
+        "fn": 195613,
+        "num_pred_items": 53,
+        "num_admitted_items": 64
+      },
+      "neutrend_adaptive": {
+        "precision": 0.9186046511627907,
+        "recall": 0.0024225945271851906,
+        "f1": 0.004832444666469563,
+        "tp": 474,
+        "fp": 42,
+        "fn": 195184,
+        "num_pred_items": 516,
+        "num_admitted_items": 3379
+      },
+      "neutrend_full": {
+        "precision": 0.8490566037735849,
+        "recall": 0.00022999315131504974,
+        "f1": 0.00045986173490503856,
+        "tp": 45,
+        "fp": 8,
+        "fn": 195613,
+        "num_pred_items": 53,
+        "num_admitted_items": 64
+      }
+    }
+  ],
+  "total_seconds": 33.99958252906799
+}

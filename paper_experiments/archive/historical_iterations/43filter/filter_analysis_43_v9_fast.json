@@ -1,0 +1,118 @@
+{
+  "config": {
+    "tau": 0.3,
+    "tau_used": 0.08758654821763036,
+    "auto_tau": true,
+    "neg_quantile": 0.9,
+    "backup_ratio": 0.7,
+    "backup_margin": 4,
+    "backup_min_hits": 3,
+    "base_rho3": 8,
+    "ref_memory_kb": 10,
+    "memory_list": [
+      10
+    ],
+    "occupancy_memory_kb": 10,
+    "min_hits": 2,
+    "label_field": "label",
+    "max_records": 200000,
+    "score_direction": "low_is_trending",
+    "pos_mean_score": 0.1953968090953467,
+    "neg_mean_score": 0.2573864145298358
+  },
+  "score_diagnostics": {
+    "trending_score_stats": {
+      "count": 197310,
+      "min": 0.01728897215881121,
+      "q10": 0.09678806901796991,
+      "q25": 0.09697301908135723,
+      "median": 0.09801075333807235,
+      "q75": 0.0983266423188881,
+      "q90": 0.6536945082894063,
+      "max": 0.9297269074784865,
+      "mean": 0.1953968090953467
+    },
+    "nontrending_score_stats": {
+      "count": 2690,
+      "min": 0.030621936875074467,
+      "q10": 0.08758654821763036,
+      "q25": 0.13787191735991441,
+      "median": 0.16651303922785737,
+      "q75": 0.3706977026849599,
+      "q90": 0.5346507874120326,
+      "max": 0.9299958919065746,
+      "mean": 0.2573864145298358
+    }
+  },
+  "filter_fpr_vs_memory": [
+    {
+      "memory_kb": 10,
+      "rho3_used": 8,
+      "min_hits_used": 2,
+      "backup_min_hits_used": 3,
+      "backup_margin_used": 4,
+      "standard_filter": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 263,
+        "num_admitted_trending": 181,
+        "num_admitted_nontrending": 82,
+        "false_positive_rate": 0.3048327137546468,
+        "true_positive_rate": 0.009173381987735036,
+        "admission_purity": 0.688212927756654
+      },
+      "learned_primary": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 1864,
+        "num_admitted_trending": 1792,
+        "num_admitted_nontrending": 72,
+        "false_positive_rate": 0.26765799256505574,
+        "true_positive_rate": 0.09082154984542092,
+        "admission_purity": 0.9613733905579399
+      },
+      "learned_full": {
+        "num_items_total": 20000,
+        "num_trending_items": 19731,
+        "num_nontrending_items": 269,
+        "num_admitted_items": 1890,
+        "num_admitted_trending": 1803,
+        "num_admitted_nontrending": 87,
+        "false_positive_rate": 0.32342007434944237,
+        "true_positive_rate": 0.09137904819826669,
+        "admission_purity": 0.953968253968254
+      },
+      "relative_fpr_reduction_factor_primary": 1.1388888888888888,
+      "relative_fpr_reduction_factor_full": 0.9425287356321839
+    }
+  ],
+  "detector_occupancy": {
+    "memory_kb": 10,
+    "rho3_used": 8,
+    "backup_margin_used": 4,
+    "backup_min_hits_used": 3,
+    "standard_filter_detector": {
+      "num_occupied_cells": 259,
+      "num_trending_cells": 182,
+      "num_nontrending_cells": 77,
+      "trending_fraction": 0.7027027027027027,
+      "nontrending_fraction": 0.2972972972972973
+    },
+    "learned_primary_detector": {
+      "num_occupied_cells": 398,
+      "num_trending_cells": 377,
+      "num_nontrending_cells": 21,
+      "trending_fraction": 0.9472361809045227,
+      "nontrending_fraction": 0.052763819095477386
+    },
+    "learned_full_detector": {
+      "num_occupied_cells": 398,
+      "num_trending_cells": 371,
+      "num_nontrending_cells": 27,
+      "trending_fraction": 0.9321608040201005,
+      "nontrending_fraction": 0.0678391959798995
+    }
+  }
+}

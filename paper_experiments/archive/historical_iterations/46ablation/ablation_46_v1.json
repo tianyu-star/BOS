@@ -1,0 +1,73 @@
+{
+  "experiment": "ablation_46",
+  "config": {
+    "memory_kb": 10,
+    "tau": 0.3,
+    "backup_ratio": 0.7,
+    "backup_margin": 4,
+    "backup_min_hits": 3,
+    "label_field": "label",
+    "max_records": null,
+    "score_direction": "low_is_trending",
+    "pos_mean_score": 0.19376603541105789,
+    "neg_mean_score": 0.25375859634294073
+  },
+  "results": [
+    {
+      "precision": 0.9025974025974026,
+      "recall": 0.0007104232896175981,
+      "f1": 0.0014197291279390437,
+      "tp": 139,
+      "fp": 15,
+      "fn": 195519,
+      "num_gt_items": 195658,
+      "num_pred_items": 154,
+      "num_admitted_items": 801,
+      "num_admitted_by_score": 0,
+      "num_admitted_by_backup": 0,
+      "variant": "scout_manual"
+    },
+    {
+      "precision": 0.8666666666666667,
+      "recall": 0.00033221232967729406,
+      "f1": 0.000664170068409517,
+      "tp": 65,
+      "fp": 10,
+      "fn": 195593,
+      "num_gt_items": 195658,
+      "num_pred_items": 75,
+      "num_admitted_items": 196000,
+      "num_admitted_by_score": 196000,
+      "num_admitted_by_backup": 0,
+      "variant": "neutrend_filter"
+    },
+    {
+      "precision": 0.9022082018927445,
+      "recall": 0.001461734250580094,
+      "f1": 0.002918739635157546,
+      "tp": 286,
+      "fp": 31,
+      "fn": 195372,
+      "num_gt_items": 195658,
+      "num_pred_items": 317,
+      "num_admitted_items": 1540,
+      "num_admitted_by_score": 0,
+      "num_admitted_by_backup": 0,
+      "variant": "neutrend_adaptive"
+    },
+    {
+      "precision": 0.9055690072639225,
+      "recall": 0.001911498635373969,
+      "f1": 0.0038149445863998248,
+      "tp": 374,
+      "fp": 39,
+      "fn": 195284,
+      "num_gt_items": 195658,
+      "num_pred_items": 413,
+      "num_admitted_items": 196000,
+      "num_admitted_by_score": 196000,
+      "num_admitted_by_backup": 18,
+      "variant": "neutrend_full"
+    }
+  ]
+}

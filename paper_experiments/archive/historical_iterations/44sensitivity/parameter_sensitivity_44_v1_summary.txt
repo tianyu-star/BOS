@@ -1,0 +1,6 @@
+Parameter Sensitivity Summary
+mean_f1=0.002472
+median_f1=0.001889
+min_f1=0.000450
+max_f1=0.009439
+stdev_f1=0.001584

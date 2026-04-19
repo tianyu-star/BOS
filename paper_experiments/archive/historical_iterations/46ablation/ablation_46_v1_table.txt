@@ -1,0 +1,6 @@
+Ablation Results
+variant	precision	recall	f1	num_pred_items	num_admitted_items	num_admitted_by_score	num_admitted_by_backup
+scout_manual	0.902597	0.000710	0.001420	154	801	0	0
+neutrend_filter	0.866667	0.000332	0.000664	75	196000	196000	0
+neutrend_adaptive	0.902208	0.001462	0.002919	317	1540	0	0
+neutrend_full	0.905569	0.001911	0.003815	413	196000	196000	18
