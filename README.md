@@ -1,4 +1,4 @@
-# BOS — Brain-on-Switch
+# BOS
 
 > 中文版：[README_CN.md](README_CN.md)
 
