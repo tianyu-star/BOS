@@ -54,3 +54,5 @@ python aggregator.py --dataset DATASET_NAME
 完整的快速启动命令见 `paper_experiments/README.md`。
 
 完整的分阶段技术说明见 `paper_experiments/docs/experiment_pipeline_cn.md`。
+
+目前实验结果的数据源文件为caida_1000w.pcap 202410231400.pcap 202511261400.pcap 202603061400.pcap, 后面三个个都是MAWI网站上https://mawi.wide.ad.jp/mawi/的数据包，分别为2024年10月23日，2025年11月26日和2026年3月6日的。
